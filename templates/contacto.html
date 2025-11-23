@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Contáctanos</h1>
+
+    <form action="/enviar" method="POST">
+
+        <label>Nombre Completo</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico</label>
+        <input type="email" name="correo" required>
+
+        <label>Teléfono (opcional)</label>
+        <input type="text" name="telefono">
+
+        <label>Asunto</label>
+        <input type="text" name="asunto" required>
+
+        <label>Mensaje</label>
+        <textarea name="mensaje" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</div>
+
+</body>
+</html>
